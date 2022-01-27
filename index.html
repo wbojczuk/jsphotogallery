@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Photo Gallery</title>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="js/photogallery.js" defer></script>
+</head>
+<body class="bg-dark">
+    <nav class="bg-dark navbar-nav text-light fixed-top">
+        <div class="navbar-brand"><i class="bi bi-camera text-light"></i> Photos</div>
+    </nav>
+    <div id="mainWrapper">
+
+    <!-- Gallery Container -->
+    <div class="container" id="galleryContainer">
+        
+
+        <!-- ROW -->
+        <div class="row">
+            <hr>
+
+            <!-- Columns -->
+            <div class="col-2 img-frame m-1" id="imageFrame">
+
+                <a href="#" onclick="expandImg('1'); return false;" class="img-wrapper" id="imgWrapper">
+                    <div class="img" id="img1"></div>
+                </a>
+            </div>
+
+            <div class="col-2 img-frame m-1" id="imageFrame">
+
+                <a href="#" onclick="expandImg('2'); return false;" class="img-wrapper" id="imgWrapper">
+                    <div class="img" id="img2"></div>
+                </a>
+            </div>
+
+            <div class="col-2 img-frame m-1" id="imageFrame">
+
+                <a href="#" onclick="expandImg('3'); return false;" class="img-wrapper" id="imgWrapper">
+                    <div class="img" id="img3"></div>
+                </a>
+            </div>
+
+            <div class="col-2 img-frame m-1" id="imageFrame">
+
+                <a href="#" onclick="expandImg('4'); return false;" class="img-wrapper" id="imgWrapper">
+                    <div class="img" id="img4"></div>
+                </a>
+            </div>
+            <div class="col-2 img-frame m-1" id="imageFrame">
+
+                <a href="#" onclick="expandImg('5'); return false;" class="img-wrapper" id="imgWrapper">
+                    <div class="img" id="img5"></div>
+                </a>
+            </div>
+            <div class="col-2 img-frame m-1" id="imageFrame">
+
+                <a href="#" onclick="expandImg('6'); return false;" class="img-wrapper" id="imgWrapper">
+                    <div class="img" id="img6"></div>
+                </a>
+            </div>
+        </div>
+        <hr>
+
+        <!-- ROW -->
+        <div class="row">
+
+            <!-- Columns -->
+            <div class="col-2 img-frame m-1" id="imageFrame">
+
+                <a href="#" onclick="expandImg('7'); return false;" class="img-wrapper" id="imgWrapper">
+                    <div class="img" id="img7"></div>
+                </a>
+            </div>
+
+            <div class="col-2 img-frame m-1" id="imageFrame">
+
+                <a href="#" onclick="expandImg('8'); return false;" class="img-wrapper" id="imgWrapper">
+                    <div class="img" id="img8"></div>
+                </a>
+            </div>
+
+            <div class="col-2 img-frame m-1" id="imageFrame">
+
+                <a href="#" onclick="expandImg('9'); return false;" class="img-wrapper" id="imgWrapper">
+                    <div class="img" id="img9"></div>
+                </a>
+            </div>
+
+            <div class="col-2 img-frame m-1" id="imageFrame">
+
+                <a href="#" onclick="expandImg('10'); return false;" class="img-wrapper" id="imgWrapper">
+                    <div class="img" id="img10"></div>
+                </a>
+            </div>
+            <div class="col-2 img-frame m-1" id="imageFrame">
+
+                <a href="#" onclick="expandImg('11'); return false;" class="img-wrapper" id="imgWrapper">
+                    <div class="img" id="img11"></div>
+                </a>
+            </div>
+            <div class="col-2 img-frame m-1" id="imageFrame">
+
+                <a href="#" onclick="expandImg('12'); return false;" class="img-wrapper" id="imgWrapper">
+                    <div class="img" id="img12"></div>
+                </a>
+            </div>
+        </div>
+        <hr>
+
+        <!-- ROW -->
+        <div class="row">
+
+            <!-- Columns -->
+            <div class="col-2 img-frame m-1" id="imageFrame">
+
+                <a href="#" onclick="expandImg('13'); return false;" class="img-wrapper" id="imgWrapper">
+                    <div class="img" id="img13"></div>
+                </a>
+            </div>
+
+            <div class="col-2 img-frame m-1" id="imageFrame">
+
+                <a href="#" onclick="expandImg('14'); return false;" class="img-wrapper" id="imgWrapper">
+                    <div class="img" id="img14"></div>
+                </a>
+            </div>
+
+            <div class="col-2 img-frame m-1" id="imageFrame">
+
+                <a href="#" onclick="expandImg('15'); return false;" class="img-wrapper" id="imgWrapper">
+                    <div class="img" id="img15"></div>
+                </a>
+            </div>
+
+            <div class="col-2 img-frame m-1" id="imageFrame">
+
+                <a href="#" onclick="expandImg('16'); return false;" class="img-wrapper" id="imgWrapper">
+                    <div class="img" id="img16"></div>
+                </a>
+            </div>
+            <div class="col-2 img-frame m-1" id="imageFrame">
+
+                <a href="#" onclick="expandImg('17'); return false;" class="img-wrapper" id="imgWrapper">
+                    <div class="img" id="img17"></div>
+                </a>
+            </div>
+            <div class="col-2 img-frame m-1" id="imageFrame">
+
+                <a href="#" onclick="expandImg('18'); return false;" class="img-wrapper" id="imgWrapper">
+                    <div class="img" id="img18"></div>
+                </a>
+            </div>
+        </div>
+        <hr>
+
+    </div>
+    <!-- END Gallery Container -->
+
+    <!-- Expanded Image Container -->
+    <div class="container d-none expanded-img-container" id="expandedImgContainer">
+
+         <!-- Expanded Image Output-->
+        <div class="row">
+
+            <div class="col-12 expanded-img-frame bg-dark" id="expandedImgFrame">
+
+                <div class="expanded-img-wrapper" id="expandedImgWrapper">
+
+                    <div class="expanded-img" id="expandedImg"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Expanded Image Tools -->
+        <div class="expanded-img-row row bg-dark">
+            <div class="col-3 tool-col"></div>
+
+            <div class="col-1 expanded-tool-frame tool-col">
+                <a id="previousExpandedImgButton" href="#" onclick="previousExpandedImg(); return false;" class="bi bi-chevron-left expanded-tool-text"></a>
+              </div>
+
+            <!-- EMPTY Tool -->
+            <div class="col-1 tool-col"></div>
+
+            <!-- Close Expanded Button -->
+            <div id="closeExpandedButton" class="col-2 expanded-tool-frame tool-col"><a href="#" onclick="closeExpandedButton(); return false;" class="bi bi-x expanded-tool-text"></a></div>
+
+             <div class="col-1 tool-col"></div>
+
+              
+              <div class="col-1 expanded-tool-frame tool-col">
+                <a href="#" id="nextExpandedImgButton" onclick="nextExpandedImg(); return false;" class="bi bi-chevron-right expanded-tool-text"></a>
+              </div>
+            
+
+            <div class="col-3 tool-col"></div>
+        </div>
+    </div>
+</div>
+
+    <!-- Value Print Testing -->
+    <!-- <button onclick="loadThumb();">Print</button>
+        <div id="printTest" class="text-align-center"></div> -->
+    
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
