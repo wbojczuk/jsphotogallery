@@ -24,7 +24,7 @@ body {
 .img-frame {
     border-right: 1px solid #aaa;
     height: 10vw;
-    width: 13.5vw;
+    width: 15%;
 }
 .img-wrapper {
 display: inline-block;
