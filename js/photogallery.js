@@ -22,7 +22,7 @@ function loadThumb() {
     // Loop to load Thumbnails 
     for (let i = 0; i < imgCount; i++ ) {
         currentCount = i + 1;
-        imgLocation = "url('img/" + currentCount + ".jpg";
+        imgLocation = "url('thumb/" + currentCount + ".jpg";
         elementId = "img" + currentCount;
         document.getElementById(elementId).style.background = imgLocation;
         document.getElementById(elementId).style.backgroundPosition = "center";
@@ -41,6 +41,7 @@ function expandImg(intValue) {
 
 document.getElementById("galleryContainer").classList.add("d-none");
 currentImg = intValue;
+var parsedIntValue = parseInt(intValue);
 var imgLocation = "url('img/" + intValue + ".jpg')";
 var expandedImg = document.getElementById("expandedImg");
 expandedImg.style.background = imgLocation;
@@ -49,6 +50,26 @@ expandedImg.style.backgroundPosition = "center";
 expandedImg.style.backgroundRepeat = "no-repeat";
 document.getElementById("expandedImgContainer").classList.remove("d-none");
 document.getElementById("mainWrapper").style.background = "none";
+
+    if (parsedIntValue == 1 ) {
+        var preButton = document.getElementById("previousExpandedImgButton");
+        preButton.style.pointerEvents = "none";
+        preButton.style.opacity = "0.2";
+    }
+    if (parsedIntValue == parseInt(imgCount)) {
+        var nextButton = document.getElementById("nextExpandedImgButton");
+        nextButton.style.pointerEvents = "none";
+        nextButton.style.opacity = "0.2";
+    }
+    if (parsedIntValue < parseInt(imgCount) && parsedIntValue > 1) {
+        var preButton = document.getElementById("previousExpandedImgButton");
+        preButton.style.pointerEvents = "auto";
+        preButton.style.opacity = "1";
+        var nextButton = document.getElementById("nextExpandedImgButton");
+        nextButton.style.pointerEvents = "auto";
+        nextButton.style.opacity = "1";
+
+    }
 
 }
 
