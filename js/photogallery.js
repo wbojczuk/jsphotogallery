@@ -40,7 +40,7 @@ function loadThumb() {
 function expandImg(intValue) {
 
 document.getElementById("galleryContainer").classList.add("d-none");
-currentImg = intValue;
+currentImg = parseInt(intValue);
 var parsedIntValue = parseInt(intValue);
 var imgLocation = "url('img/" + intValue + ".jpg')";
 var expandedImg = document.getElementById("expandedImg");
@@ -52,14 +52,20 @@ document.getElementById("expandedImgContainer").classList.remove("d-none");
 document.getElementById("mainWrapper").style.background = "none";
 
     if (parsedIntValue == 1 ) {
+        var nextButton = document.getElementById("nextExpandedImgButton");
         var preButton = document.getElementById("previousExpandedImgButton");
         preButton.style.pointerEvents = "none";
         preButton.style.opacity = "0.2";
+        nextButton.style.pointerEvents = "auto";
+        nextButton.style.opacity = "1";
     }
     if (parsedIntValue == parseInt(imgCount)) {
         var nextButton = document.getElementById("nextExpandedImgButton");
+        var preButton = document.getElementById("previousExpandedImgButton");
         nextButton.style.pointerEvents = "none";
         nextButton.style.opacity = "0.2";
+        preButton.style.pointerEvents = "auto";
+        preButton.style.opacity = "1";
     }
     if (parsedIntValue < parseInt(imgCount) && parsedIntValue > 1) {
         var preButton = document.getElementById("previousExpandedImgButton");
